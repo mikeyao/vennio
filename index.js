@@ -6,6 +6,7 @@ var promise = require('bluebird');
 var fs = promise.promisifyAll(require('fs'));
 var mongoose = require('mongoose');
 
+
 var db = process.env.MONGOLAB_URI || 'mongodb://localhost/vennio';
 mongoose.connect(db);
 
