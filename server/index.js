@@ -7,6 +7,7 @@ var fs = promise.promisifyAll(require('fs'));
 var mongoose = require('mongoose');
 var helper = require('./helper.js');
 
+
 var port = process.env.PORT || 3000;
 var db = process.env.MONGOLAB_URI || 'mongodb://localhost/vennio';
 mongoose.connect(db);
