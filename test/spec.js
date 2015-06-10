@@ -8,7 +8,7 @@ describe('test', function(){
 });
 
 describe('Server Integration', function(){
-  xit('should return salary and jobs grouped by skills', function(done){
+  it('should return salary and jobs grouped by skills', function(done){
     request('http://vennio.herokuapp.com/SalaryJobBySkill', function(err, response, body){
       if (!err && response.statusCode == 200) {
           var data = JSON.parse(body);
@@ -31,7 +31,7 @@ describe('Server Integration', function(){
     });
   });
 
-  xit('should return number of companies grouped by skills', function(done){
+  it('should return number of companies grouped by skills', function(done){
     request('http://vennio.herokuapp.com/CompanyBySkill', function(err, response, body){
       if (!err && response.statusCode == 200) {
           var data = JSON.parse(body);
